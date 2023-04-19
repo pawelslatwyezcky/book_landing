@@ -1,0 +1,112 @@
+.buy-now-section {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.buy-now-section h2 {
+  font-family: 'Joti One', cursive;
+  text-transform: uppercase;
+  padding: 2rem 0 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #193d57;
+  z-index: 100;
+  position: relative;
+  text-shadow: 0.1rem 0.1rem 0.3rem #fff;
+}
+
+.buy_now_content {
+  display: flex;
+}
+
+.buy-now-section .left,
+.buy-now-section .right {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-now-section .left {
+  width: 60%;
+  padding-left: 5rem;
+  z-index: 1;
+}
+
+.buy-now-section .right {
+  width: 40%;
+}
+
+.buy-now-description {
+  font-family: 'Kite One', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: #666;
+  text-align: center;
+}
+
+.buy-now-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-now-btn {
+  font-family: 'Joti One', cursive;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.amazon-paper-btn,
+.amazon-paper-btn:visited {
+  background-color: #b4e5ee;
+  color: #193d57;
+  border: none;
+  margin-right: 1rem;
+}
+
+.amazon-paper-btn:hover {
+  color: #fff;
+  background-color: teal;
+}
+
+.amazon-ebook-btn,
+.amazon-ebook-btn:visited {
+  color: #fff;
+  background-color: #193d57;
+  border: none;
+}
+
+.amazon-ebook-btn:hover {
+  background-color: lightskyblue;
+  color: #193d57;
+}
+
+.book-cover-image {
+  z-index: 0;
+  width: 20rem;
+  filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.6));
+}
+
+@media screen and (max-width: 900px) {
+  .book-cover-image {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buy-now-section .left {
+    padding-left: 2rem;
+  }
+}

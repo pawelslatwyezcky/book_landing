@@ -1,0 +1,61 @@
+.about-section {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.about-section h2 {
+  font-family: 'Joti One', cursive;
+  padding: 2rem 0 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #193d57;
+}
+
+.about-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section .container p,
+.about-section .container img {
+  width: 50%;
+}
+
+.about-section .container img {
+  object-fit: cover;
+}
+
+.about-section .container p {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-family: 'Kite One', sans-serif;
+  color: #193d57;
+}
+
+.about-section .buy-button {
+  display: block;
+  margin: 3rem auto 0;
+  padding: 0.5rem 3.5rem;
+  font-family: 'Joti One', cursive;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: #b4e5ee;
+  color: #193d57;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-section .buy-button:hover {
+  background-color: #193d57;
+  color: #fff;
+}

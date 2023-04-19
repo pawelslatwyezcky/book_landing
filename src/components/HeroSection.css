@@ -1,0 +1,109 @@
+.hero {
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .parallax-bg {
+  position: absolute;
+  left: -15%;
+  height: 50rem;
+  object-fit: cover;
+  min-width: 130%;
+}
+
+.hero-text {
+  color: #193d57;
+  padding: 4rem;
+  display: flex;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0.3rem #fff;
+  height: 100%;
+}
+
+.hero-text .left_side,
+.hero-text .right_side {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text .left_side {
+  flex-direction: column;
+}
+
+.hero-text .left_side h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-family: 'Princess Sofia', cursive;
+}
+
+.hero-text .left_side h1 span {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 5rem;
+}
+
+.hero-text .left_side p {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero-text .left_side button {
+  padding: 0.5rem 1.5rem;
+  font-family: 'Joti One', cursive;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text .left_side button a {
+  color: #193d57;
+  transition: color 0.3s ease;
+}
+
+.hero-text .left_side button:hover {
+  background-color: #193d57;
+  border: none;
+  outline: none;
+}
+
+.hero-text .left_side button:hover > a {
+  color: #fff;
+}
+
+.hero-text .left_side button:active {
+  border: none;
+  outline: none;
+}
+
+.hero-text .left_side button:focus {
+  border: none;
+  outline: none;
+}
+
+.hero-text .right_side .book_cover {
+  z-index: 5;
+  width: 20rem;
+  filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.6));
+}
+
+@media screen and (max-width: 900px) {
+  .hero-text .left_side {
+    width: 100%;
+  }
+  .hero-text .right_side {
+    display: none;
+  }
+}

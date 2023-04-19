@@ -1,0 +1,80 @@
+.highlights-section {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.highlights-section h2 {
+  font-family: 'Joti One', cursive;
+  padding: 2rem 0 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #193d57;
+}
+
+.highlights-content {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+}
+
+.highlight-card {
+  width: 20rem;
+  /* height: 25rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-image {
+  width: 18rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.highlight-card h3 {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  padding: 0 0.2rem;
+}
+
+.highlight-card p {
+  font-family: 'Kite One', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: #666;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .highlight-card {
+    width: 75%;
+    /* height: 25rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+}

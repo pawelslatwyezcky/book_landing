@@ -1,0 +1,42 @@
+header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: transparent;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  margin: 0 1.3rem;
+  font-family: 'Joti One', cursive;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #193d57;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul li a,
+  nav ul li a:visited {
+    margin: 0 0.7rem;
+  }
+}

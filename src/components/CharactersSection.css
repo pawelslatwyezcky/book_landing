@@ -1,0 +1,98 @@
+.characters-section {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.characters-section h2 {
+  font-family: 'Joti One', cursive;
+  padding: 2rem 0 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #193d57;
+}
+
+.characters-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 5rem;
+}
+
+.character-card {
+  display: flex;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.character-card.Lily {
+  flex-direction: row-reverse;
+}
+
+.character-image {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
+}
+
+.character-name {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.character-description {
+  font-family: 'Kite One', sans-serif;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .characters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .characters-container {
+    padding: 0 1rem;
+  }
+  .character-card.Lily {
+    flex-direction: column;
+    align-items: center;
+  }
+  .character-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character-image {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.6rem;
+  }
+}
