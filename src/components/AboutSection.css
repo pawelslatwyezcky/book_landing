@@ -49,13 +49,20 @@
   border: none;
   border-radius: 0.8rem;
   background-color: #b4e5ee;
-  color: #193d57;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+.about-section .buy-button a,
+.about-section .buy-button a:visited {
+  color: #193d57;
+}
+
 .about-section .buy-button:hover {
   background-color: #193d57;
+}
+
+.about-section .buy-button:hover > a {
   color: #fff;
 }
