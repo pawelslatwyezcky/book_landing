@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import Header from './components/Header.jsx';
 import Hero from './components/HeroSection.jsx';
@@ -13,21 +12,11 @@ import Contact from './components/ContactSection.jsx';
 import Footer from './components/Footer';
 import './App.css';
 
-const AppContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-`;
-
-const MainContent = styled.main`
-  flex-grow: 1;
-`;
-
 function App() {
   return (
-    <AppContainer>
+    <div className="app_container">
       <Header />
-      <MainContent>
+      <div className="main_container">
         <Hero />
         <AboutBook />
         <ChapterHighlights />
@@ -36,9 +25,9 @@ function App() {
         <AboutAuthor />
         <BuyNow />
         <Contact />
-      </MainContent>
+      </div>
       <Footer />
-    </AppContainer>
+    </div>
   );
 }
 
